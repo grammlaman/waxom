@@ -116,7 +116,7 @@ body{
 	color: var(--black);
 }
 .page-subtitle a:hover{
-	color: #c0301c;
+	color: var(--red);
 }
 .page-btn{
 	border-radius: 2px;
@@ -125,6 +125,11 @@ body{
 	border: 2px solid #fff;
 	color: #fff;
 	padding:13px 33px;
+	transition: .35s ease;
+}
+.page-btn:hover{
+	background-color: #fff;
+	color: var(--red);
 }
 .page-title{
 	font: 20px var(--mon-reg);
@@ -170,8 +175,8 @@ body{
 	background-image: url('../img/service3.png');
 }
 .services-item-img:hover{
-	background-color: #c0301c;
-	border: 2px solid #c0301c;
+	background-color: var(--red);
+	border: 2px solid var(--red);
 }
 .services-item:first-child .services-item-img:hover{
 	background-image: url('../img/servicew1.png');
@@ -260,7 +265,7 @@ body{
 	height: 28px;
 }
 .about-links a:hover{
-	background-color: #c0301c;
+	background-color: var(--red);
 }
 .facebook{
 	background-image: url('../img/facebook.png');
@@ -289,7 +294,7 @@ body{
 	position: relative;
 }
 .works-list-item:hover{
-	background-color: #c0301c;
+	background-color: var(--red);
 }
 .works-list-item:hover img{
 	opacity: 0.3;
@@ -327,7 +332,7 @@ body{
 }
 .works-list-item-btn{
 	padding: 15px 20px 13px;
-	color: #c0301c;
+	color: var(--red);
 	text-transform: uppercase;
 	font-family: var(--main-font-family);
 	border: none;
@@ -340,9 +345,39 @@ body{
 	margin-left: 12px;
 	width: 7px;
 	height: 7px;
-	border: 1px solid #c0301c;
+	border: 1px solid var(--red);
 	border-left: none;
 	border-bottom: none;
 	transform: rotate(45deg);
+}
+.works-list-item-btn:hover{
+	background-color: var(--red);
+	color: #fff;
+}
+.works-list-item-btn:hover:after{
+	border-color: #fff;
+}
+
+.project{
+	height: 370px;
+	background-image: url('../img/project.jpg');
+	background-repeat: no-repeat;
+	background-position: 0 -680px;
+}
+.project-text{
+	background-color: rgba(192,48,28,0.5);
+	height: 370px;
+	text-align: center;
+}
+.project-title{
+	font-size: 30px;
+	color: #fff;
+	margin-bottom: 15px;
+}
+.project-title:nth-child(2){
+	margin-bottom: 53px;
+}
+.project-btn{
+	font-family: var(--main-font-family);
 }
 /*Общие Стили страницы*/
